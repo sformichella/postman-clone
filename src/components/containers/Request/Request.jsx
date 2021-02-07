@@ -16,7 +16,7 @@ export default class Request extends Component {
 
   render() {
     return (
-      <form>
+      <form onChange={this.formChange}>
         <div>
           <Url/>
           <Go/>
