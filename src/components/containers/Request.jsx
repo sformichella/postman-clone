@@ -7,9 +7,19 @@ import Body from "../presentation/Body/Body";
 export default class Request extends Component {
   render() {
     return (
-      <>
-        
-      </>
+      <form>
+        <div>
+          <Url/>
+          <Go/>
+        </div>
+        <div>
+          <HTTPVerb method="GET"/>
+          <HTTPVerb method="POST"/>
+          <HTTPVerb method="PUT"/>
+          <HTTPVerb method="DELETE"/>
+        </div>
+        <Body/>
+      </form>
     );
   }
 }
