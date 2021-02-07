@@ -8,10 +8,16 @@ export default class Request extends Component {
 
   state = {
     response: [],
-    requestUrl: "",
+    url: "",
     body: "",
     verb: "GET",
     loading: false
+  }
+
+  formChange = ({ target }) => {
+    const { value, id, name } = target;
+    
+    this.setState({ [name]: value });
   }
 
   render() {
