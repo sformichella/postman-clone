@@ -17,7 +17,8 @@ export default class Request extends Component {
   formChange = ({ target }) => {
     const { value, id, name } = target;
     
-    this.setState({ [name]: value });
+    this.setState({ [name]: value })
+      .then(() => console.log(this.state));
   }
 
   render() {

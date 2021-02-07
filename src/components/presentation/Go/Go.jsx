@@ -1,14 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Go({ queryOnClick }) {
+export default function Go() {
   return (
     <>
-      <button onClick={ queryOnClick }>Query!</button>
+      <button>Query!</button>
     </>
   );
 }
-
-Go.propTypes = {
-  queryOnClick: PropTypes.func.isRequired
-};
