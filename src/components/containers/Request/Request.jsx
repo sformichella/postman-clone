@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Url from "../../presentation/Url/Url";
-import HTTPVerb from "../../presentation/HTTPVerb/HTTPVerb";
+import HTTPMethod from "../../presentation/HTTPMethod/HTTPMethod";
 import Go from "../../presentation/Go/Go";
 import Body from "../../presentation/Body/Body";
 
@@ -10,7 +10,7 @@ export default class Request extends Component {
     response: [],
     url: "",
     body: "",
-    verb: "GET",
+    Method: "GET",
     loading: false
   }
 
@@ -23,7 +23,11 @@ export default class Request extends Component {
   formSubmit = e => {
     e.preventDefault();
 
-    console.log(this.state);
+    const { url, Method, body } = this.state;
+
+    fetch(url, {
+      method: Method
+    });
   };
 
   render() {
@@ -37,10 +41,10 @@ export default class Request extends Component {
           <Go/>
         </div>
         <div>
-          <HTTPVerb method="GET"/>
-          <HTTPVerb method="POST"/>
-          <HTTPVerb method="PUT"/>
-          <HTTPVerb method="DELETE"/>
+          <HTTPMethod method="GET"/>
+          <HTTPMethod method="POST"/>
+          <HTTPMethod method="PUT"/>
+          <HTTPMethod method="DELETE"/>
         </div>
         <Body/>
       </form>

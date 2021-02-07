@@ -8,7 +8,7 @@ export default function HTTPVerb({ method }) {
       <input
         id={method}
         type="radio"
-        name="verb"
+        name="method"
         value={method}
       />
     </>
