@@ -3,7 +3,12 @@ import React from "react";
 export default function Go() {
   return (
     <>
-      <button>Query!</button>
+      <label htmlFor="submit">Query!</label>
+      <input
+        id="submit"
+        type="submit"
+        name="submit"
+      />
     </>
   );
 }
