@@ -1,11 +1,11 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
-import App from "./App";
+import Navigation from "./Navigation";
 
-describe("App component", () => {
+describe("Navigation component", () => {
   afterEach(() => cleanup());
-  it("renders App", () => {
-    const { asFragment } = render(<App />);
+  it("renders Navigation", () => {
+    const { asFragment } = render(<Navigation />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -1,11 +1,11 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
-import App from "./App";
+import Go from "./Go";
 
-describe("App component", () => {
+describe("Go component", () => {
   afterEach(() => cleanup());
-  it("renders App", () => {
-    const { asFragment } = render(<App />);
+  it("renders Go", () => {
+    const { asFragment } = render(<Go />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
