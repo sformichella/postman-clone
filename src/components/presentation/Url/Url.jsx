@@ -7,6 +7,7 @@ export default function Url() {
       <input
         id="url"
         type="text"
+        name="url"
         placeholder="URL"
       />
     </>
