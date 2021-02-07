@@ -15,16 +15,23 @@ export default class Request extends Component {
   }
 
   formChange = ({ target }) => {
-    const { value, id, name } = target;
+    const { value, name } = target;
     
-    this.setState({ [name]: value }, () => {
-      console.log(this.state);
-    });
+    this.setState({ [name]: value });
   }
 
+  formSubmit = e => {
+    e.preventDefault();
+
+    
+  };
+
   render() {
+
+    const { formChange, formSubmit } = this;
+
     return (
-      <form onChange={this.formChange}>
+      <form onChange={formChange} onSubmit={formSubmit}>
         <div>
           <Url/>
           <Go/>
