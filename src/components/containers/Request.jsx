@@ -5,6 +5,15 @@ import Go from "../presentation/Go/Go";
 import Body from "../presentation/Body/Body";
 
 export default class Request extends Component {
+
+  state = {
+    response: [],
+    requestUrl: "",
+    body: "",
+    verb: "GET",
+    loading: false
+  }
+
   render() {
     return (
       <form>
