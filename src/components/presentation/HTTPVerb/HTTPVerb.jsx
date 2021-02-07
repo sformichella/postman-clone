@@ -1,9 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function HTTPVerb() {
+export default function HTTPVerb({ method }) {
   return (
-    <div>
-      
-    </div>
+    <>
+      <label htmlFor={method}>{method}</label>
+      <input id={method} type="radio"/>
+    </>
   );
 }
+
+HTTPVerb.propTypes = {
+  method: PropTypes.string.isRequired
+};
