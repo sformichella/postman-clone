@@ -2,6 +2,9 @@ import React from "react";
 
 export default function Url() {
   return (
-    <input id="url" type="text" defaultValue="URL"/>
+    <>
+      <label htmlFor="url"></label>
+      <input id="url" type="text" defaultValue="URL"/>
+    </>
   );
 }
