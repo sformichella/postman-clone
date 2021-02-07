@@ -7,6 +7,7 @@ export default function Body() {
       <input
         id="body"
         type="text"
+        name="body"
         placeholder="Enter request body here."
       />
     </>
