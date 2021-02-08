@@ -1,11 +1,11 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
-import HTTPVerb from "./HTTPMethod";
+import HTTPMethod from "./HTTPMethod";
 
-describe("HTTPVerb component", () => {
+describe("HTTPMethod component", () => {
   afterEach(() => cleanup());
-  it("renders HTTPVerb", () => {
-    const { asFragment } = render(<HTTPVerb />);
+  it("renders HTTPMethod", () => {
+    const { asFragment } = render(<HTTPMethod />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
