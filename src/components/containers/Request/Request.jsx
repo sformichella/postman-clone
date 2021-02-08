@@ -3,13 +3,14 @@ import Url from "../../presentation/Url/Url";
 import HTTPMethod from "../../presentation/HTTPMethod/HTTPMethod";
 import Go from "../../presentation/Go/Go";
 import Body from "../../presentation/Body/Body";
+import Response from "../../presentation/Response/Response";
 
 export default class Request extends Component {
 
   state = {
     response: [],
     url: "",
-    body: "",
+    body: null,
     Method: "GET",
     loading: false
   }
@@ -27,28 +28,31 @@ export default class Request extends Component {
 
     fetch(url, { method, body })
       .then(res => res.json())
-      .then(response => this.setState({ response }))
-      .then(() => console.log(this.state.response));
+      .then(response => this.setState({ response }));
   };
 
   render() {
 
     const { formChange, formSubmit } = this;
+    const { response } = this.state;
 
     return (
-      <form onChange={formChange} onSubmit={formSubmit}>
-        <div>
-          <Url/>
-          <Go/>
-        </div>
-        <div>
-          <HTTPMethod method="GET"/>
-          <HTTPMethod method="POST"/>
-          <HTTPMethod method="PUT"/>
-          <HTTPMethod method="DELETE"/>
-        </div>
-        <Body/>
-      </form>
+      <>
+        <form onChange={formChange} onSubmit={formSubmit}>
+          <div>
+            <Url/>
+            <Go/>
+          </div>
+          <div>
+            <HTTPMethod method="GET"/>
+            <HTTPMethod method="POST"/>
+            <HTTPMethod method="PUT"/>
+            <HTTPMethod method="DELETE"/>
+          </div>
+          <Body/>
+        </form>
+        <Response response={response}/>
+      </>
     );
   }
 }
