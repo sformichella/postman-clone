@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Url component renders Url 1`] = `
+<DocumentFragment>
+  <label
+    for="url"
+  />
+  <input
+    id="url"
+    name="url"
+    placeholder="URL"
+    type="text"
+  />
+</DocumentFragment>
+`;

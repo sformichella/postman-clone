@@ -8,7 +8,7 @@ import Response from "../../presentation/Response/Response";
 export default class Request extends Component {
 
   state = {
-    response: [],
+    response: "",
     url: "",
     body: null,
     Method: "GET",

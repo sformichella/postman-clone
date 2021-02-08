@@ -2,8 +2,77 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <form>
+    <div>
+      <label
+        for="url"
+      />
+      <input
+        id="url"
+        name="url"
+        placeholder="URL"
+        type="text"
+      />
+      <button>
+        Query!
+      </button>
+    </div>
+    <div>
+      <label
+        for="GET"
+      >
+        GET
+      </label>
+      <input
+        id="GET"
+        name="method"
+        type="radio"
+        value="GET"
+      />
+      <label
+        for="POST"
+      >
+        POST
+      </label>
+      <input
+        id="POST"
+        name="method"
+        type="radio"
+        value="POST"
+      />
+      <label
+        for="PUT"
+      >
+        PUT
+      </label>
+      <input
+        id="PUT"
+        name="method"
+        type="radio"
+        value="PUT"
+      />
+      <label
+        for="DELETE"
+      >
+        DELETE
+      </label>
+      <input
+        id="DELETE"
+        name="method"
+        type="radio"
+        value="DELETE"
+      />
+    </div>
+    <label
+      for="body"
+    />
+    <input
+      id="body"
+      name="body"
+      placeholder="Enter request body here."
+      type="text"
+    />
+  </form>
+  <p />
 </DocumentFragment>
 `;

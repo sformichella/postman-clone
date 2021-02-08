@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTTPVerb component renders HTTPVerb 1`] = `
+<DocumentFragment>
+  <label />
+  <input
+    name="method"
+    type="radio"
+    value=""
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Go component renders Go 1`] = `
+<DocumentFragment>
+  <button>
+    Query!
+  </button>
+</DocumentFragment>
+`;
