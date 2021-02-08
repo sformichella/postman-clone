@@ -5,7 +5,7 @@ import HTTPMethod from "./HTTPMethod";
 describe("HTTPMethod component", () => {
   afterEach(() => cleanup());
   it("renders HTTPMethod", () => {
-    const { asFragment } = render(<HTTPMethod />);
+    const { asFragment } = render(<HTTPMethod method="GET"/>);
     expect(asFragment()).toMatchSnapshot();
   });
 });
