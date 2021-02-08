@@ -28,6 +28,7 @@ export default class Request extends Component {
 
     fetch(url, { method, body })
       .then(res => res.json())
+      .then(json => JSON.stringify(json))
       .then(response => this.setState({ response }));
   };
 

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Response({ response }) {
   return (
-    <p>{JSON.stringify(response)}</p>
+    <p>{response}</p>
   );
 }
 
