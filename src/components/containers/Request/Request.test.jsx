@@ -4,21 +4,19 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Request from "./Request";
 
 describe("Request", () => {
-  it("changes the search input", () => {
+  it("changes the URL", () => {
     render(<Request />);
 
-    const searchInput = screen.getByLabelText("Search Articles");
+    const url = screen.getByLabelText("");
     
-    fireEvent.change(searchInput, {
+    fireEvent.change(url, {
       target: {
-        value: "cute puppies"
+        value: "myapi.com/api/v1/request"
       }
     });
 
     return waitFor(() => {
-      const articles = screen.getByTestId("articles");
-      expect(articles).not.toBeEmptyDOMElement();
-      expect(searchInput).toHaveValue("cute puppies");
+      expect(url).toHaveValue("myapi.com/api/v1/request");
     });
   });
 });
