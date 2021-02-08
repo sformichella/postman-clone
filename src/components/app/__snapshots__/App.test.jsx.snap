@@ -6,7 +6,9 @@ exports[`App component renders App 1`] = `
     <div>
       <label
         for="url"
-      />
+      >
+        Request URL: 
+      </label>
       <input
         id="url"
         name="url"
@@ -65,7 +67,9 @@ exports[`App component renders App 1`] = `
     </div>
     <label
       for="body"
-    />
+    >
+      Body: 
+    </label>
     <input
       id="body"
       name="body"

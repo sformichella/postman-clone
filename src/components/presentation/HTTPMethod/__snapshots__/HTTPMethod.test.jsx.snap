@@ -2,11 +2,16 @@
 
 exports[`HTTPMethod component renders HTTPMethod 1`] = `
 <DocumentFragment>
-  <label />
+  <label
+    for="GET"
+  >
+    GET
+  </label>
   <input
+    id="GET"
     name="method"
     type="radio"
-    value=""
+    value="GET"
   />
 </DocumentFragment>
 `;
