@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function HTTPVerb({ method }) {
+export default function HTTPMethod({ method }) {
   return (
     <>
       <label htmlFor={method}>{method}</label>
@@ -15,6 +15,6 @@ export default function HTTPVerb({ method }) {
   );
 }
 
-HTTPVerb.propTypes = {
+HTTPMethod.propTypes = {
   method: PropTypes.string.isRequired
 };

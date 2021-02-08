@@ -23,11 +23,12 @@ export default class Request extends Component {
   formSubmit = e => {
     e.preventDefault();
 
-    const { url, Method, body } = this.state;
+    const { url, method, body } = this.state;
 
-    fetch(url, {
-      method: Method
-    });
+    fetch(url, { method, body })
+      .then(res => res.json())
+      .then(response => this.setState({ response }))
+      .then(() => console.log(this.state.response));
   };
 
   render() {
