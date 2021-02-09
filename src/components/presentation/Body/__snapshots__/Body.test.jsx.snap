@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body component renders Body 1`] = `
+<DocumentFragment>
+  <label
+    for="body"
+  >
+    Body: 
+  </label>
+  <input
+    id="body"
+    name="body"
+    placeholder="Enter request body here."
+    type="text"
+  />
+</DocumentFragment>
+`;

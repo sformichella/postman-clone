@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTTPMethod component renders HTTPMethod 1`] = `
+<DocumentFragment>
+  <label
+    for="GET"
+  >
+    GET
+  </label>
+  <input
+    id="GET"
+    name="method"
+    type="radio"
+    value="GET"
+  />
+</DocumentFragment>
+`;
